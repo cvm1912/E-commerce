@@ -8,11 +8,27 @@ E-commerce/
 │   ├── public/
 │   │   └── index.html
 │   ├── src/
-│   │   ├── App.js
-│   │   └── index.js
+│   │   ├── assets/
+│   │   ├── components/
+│   │   │   ├── auth/
+│   │   │   │   └── AuthLayout.jsx
+│   │   │   └── ui/
+│   │   │       └── button.jsx
+│   │   ├── lib/
+│   │   │   └── utils.js
+│   │   ├── pages/
+│   │   │   └── auth/
+│   │   │       ├── Login.jsx
+│   │   │       └── register.jsx
+│   │   ├── store/
+│   │   │   ├── authSlice.js
+│   │   │   └── store.js
+│   │   ├── App.jsx
+│   │   ├── index.css
+│   │   └── main.jsx
+│   ├── jsconfig.json
 │   ├── package.json
-│   ├── postcss.config.js
-│   └── tailwind.config.js
+│   └── vite.config.js
 ├── backend/                 # Node.js Backend
 │   ├── src/
 │   │   ├── configs/
@@ -36,14 +52,44 @@ cd client
 npm install
 ```
 
+## Shadcn Setup
+
+```bash
+# Add jsconfig.json for path alias
+# jsconfig.json
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": { "@/*": ["./src/*"] }
+  }
+}
+
+# Add alias to vite.config.js
+resolve: {
+  alias: { '@': path.resolve(__dirname, './src') }
+}
+
+# Init shadcn
+npx shadcn@latest init
+
+# Add components
+npx shadcn@latest add button
+```
+
 ## Frontend Dependencies
 
 | Package | Version |
 |---|---|
 | react | ^19.3.1 |
 | react-dom | ^19.3.1 |
+| react-router-dom | ^7.18.5 |
+| react-redux | ^9.3.1 |
+| @reduxjs/toolkit | ^2.13.0 |
 | tailwindcss | ^4.3.3 |
 | @tailwindcss/vite | ^4.3.3 |
+| lucide-react | ^1.66.0 |
+| @base-ui/react | ^1.9.0 |
+| tw-animate-css | ^1.4.0 |
 | vite | ^8.3.5 |
 
 ## Frontend Scripts

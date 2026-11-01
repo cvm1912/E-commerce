@@ -29,36 +29,30 @@ E-commerce/
 ## Frontend Setup
 
 ```bash
-# Create React app
-npx create-react-app client
+# Create Vite React app
+npm create vite@latest client -- --template react
 
-# Install Tailwind
-npm install -D tailwindcss postcss autoprefixer
-npx tailwindcss init -p
+cd client
+npm install
 ```
 
 ## Frontend Dependencies
 
 | Package | Version |
 |---|---|
-| react | ^18.3.1 |
-| react-dom | ^18.3.1 |
-| react-router-dom | ^6.30.6 |
-| react-redux | ^9.3.1 |
-| @reduxjs/toolkit | ^2.13.0 |
-| axios | ^1.21.0 |
-| lucide-react | ^0.428.0 |
-| tailwindcss | ^3.4.19 |
-| clsx | ^2.1.1 |
-| tailwind-merge | ^2.6.1 |
+| react | ^19.3.1 |
+| react-dom | ^19.3.1 |
+| tailwindcss | ^4.3.3 |
+| @tailwindcss/vite | ^4.3.3 |
+| vite | ^8.3.5 |
 
 ## Frontend Scripts
 
 ```bash
 cd client
-npm start        # Start dev server
+npm run dev      # Start dev server
 npm run build    # Production build
-npm test         # Run tests
+npm run preview  # Preview production build
 ```
 
 ## Backend Setup

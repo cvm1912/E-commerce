@@ -10,16 +10,29 @@ E-commerce/
 │   ├── src/
 │   │   ├── assets/
 │   │   ├── components/
+│   │   │   ├── admin/
+│   │   │   │   ├── AdminLayout.jsx
+│   │   │   │   ├── Header.jsx
+│   │   │   │   ├── Layout.jsx
+│   │   │   │   └── Sidebar.jsx
 │   │   │   ├── auth/
 │   │   │   │   └── AuthLayout.jsx
+│   │   │   ├── shopping/
+│   │   │   │   └── ShoppingLayout.jsx
 │   │   │   └── ui/
 │   │   │       └── button.jsx
 │   │   ├── lib/
 │   │   │   └── utils.js
 │   │   ├── pages/
-│   │   │   └── auth/
-│   │   │       ├── Login.jsx
-│   │   │       └── register.jsx
+│   │   │   ├── admin/
+│   │   │   │   ├── Dashboard.jsx
+│   │   │   │   ├── Feature.jsx
+│   │   │   │   ├── Orders.jsx
+│   │   │   │   └── Products.jsx
+│   │   │   ├── auth/
+│   │   │   │   ├── Login.jsx
+│   │   │   │   └── register.jsx
+│   │   │   └── shopping/
 │   │   ├── store/
 │   │   │   ├── authSlice.js
 │   │   │   └── store.js
